@@ -29,7 +29,7 @@ CREATE TABLE `partner_companies` (
   KEY `type_idx` (`partnerType`),
   KEY `manager_idx` (`accountManagerId`)
 );
-
+--> statement-breakpoint
 CREATE TABLE `partner_users` (
   `id` int AUTO_INCREMENT NOT NULL,
   `userId` int,
@@ -48,7 +48,7 @@ CREATE TABLE `partner_users` (
   KEY `user_idx` (`userId`),
   KEY `email_idx` (`email`)
 );
-
+--> statement-breakpoint
 CREATE TABLE `partner_deals` (
   `id` int AUTO_INCREMENT NOT NULL,
   `dealName` varchar(255) NOT NULL,
@@ -69,7 +69,6 @@ CREATE TABLE `partner_deals` (
   KEY `stage_idx` (`dealStage`)
 );
 --> statement-breakpoint
-
 CREATE TABLE `partnerMdfClaims` (
   `id` int AUTO_INCREMENT NOT NULL,
   `partnerCompanyId` int NOT NULL,
