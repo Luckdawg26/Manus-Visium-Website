@@ -68,6 +68,7 @@ CREATE TABLE `partner_deals` (
   KEY `company_idx` (`partnerCompanyId`),
   KEY `stage_idx` (`dealStage`)
 );
+--> statement-breakpoint
 
 CREATE TABLE `partnerMdfClaims` (
   `id` int AUTO_INCREMENT NOT NULL,
